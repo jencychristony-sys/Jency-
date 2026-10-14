@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jency Christony J | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111c32;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #273449;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #f1f5f9;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+            scroll-margin-top: 65px;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: radial-gradient(
+                circle at top right, #17345b, #0f172a 60%
+            );
+        }
+
+        .hero p:first-child {
+            color: #38bdf8;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 64px);
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        h1 span, h2 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            color: #cbd5e1;
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        .hero .intro {
+            max-width: 620px;
+            margin: 20px 0 28px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 5px 8px 5px 0;
+            border-radius: 7px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+            background: transparent;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            color: #cbd5e1;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 22px;
+        }
+
+        .card {
+            background: #17243b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #293952;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .skill {
+            display: inline-block;
+            padding: 9px 15px;
+            margin: 7px;
+            border: 1px solid #38bdf8;
+            border-radius: 20px;
+            color: #bae6fd;
+            background: #17243b;
+        }
+
+        .marks {
+            font-size: 34px;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact p {
+            margin: 12px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c32;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            section {
+                padding: 60px 7%;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Jency.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+
+        <h1>I'm <span>Jency Christony J</span></h1>
+
+        <h2>Aspiring Software Developer</h2>
+
+        <p class="intro">
+            I am a passionate student interested in web development,
+            problem-solving, Artificial Intelligence, and emerging
+            technologies. I love learning new things and turning
+            creative ideas into useful digital solutions.
+        </p>
+
+        <div>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#about" class="btn btn-outline">Explore More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p class="about-text">
+            Hello! I am Jency Christony J, a student at Bishop Heber
+            College, Trichy, pursuing my studies from 2026 to 2029.
+            My ambition is to become a skilled software developer.
+            I am interested in building websites, solving challenging
+            problems, and exploring the possibilities of AI and modern
+            technologies. I believe in continuous learning,
+            creativity, and improving my technical skills every day.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌐 Web Development</h3>
+                <p>
+                    Interested in creating responsive, attractive,
+                    and user-friendly websites.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🧩 Problem Solving</h3>
+                <p>
+                    Enjoy analyzing problems, thinking logically,
+                    and finding effective solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Artificial Intelligence</h3>
+                <p>
+                    Exploring AI concepts and their applications
+                    in real-world problems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Emerging Technologies</h3>
+                <p>
+                    Eager to learn about new technologies and
+                    innovations shaping the future.
+                </p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 30px;">Areas of Interest</h3>
+
+        <div style="margin-top: 12px;">
+            <span class="skill">Web Development</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Artificial Intelligence</span>
+            <span class="skill">Emerging Technologies</span>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">My <span>Education</span></h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>College Education</h3>
+                <p><strong>Bishop Heber College</strong></p>
+                <p>Trichy, Tamil Nadu</p>
+                <p>Academic period: 2026–2029</p>
+                <p>Goal: Become a Software Developer</p>
+            </div>
+
+            <div class="card">
+                <h3>Higher Secondary (12th)</h3>
+                <div class="marks">459</div>
+                <p>Marks obtained</p>
+            </div>
+
+            <div class="card">
+                <h3>Secondary School (10th)</h3>
+                <div class="marks">447</div>
+                <p>Marks obtained</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <div class="card contact">
+            <p>
+                📧 <strong>Email:</strong>
+                <a href="mailto:jencychristony@gmail.com">
+                    jencychristony@gmail.com
+                </a>
+            </p>
+
+            <p>
+                💼 <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/jency-christony-5a0483420"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visit My LinkedIn Profile
+                </a>
+            </p>
+
+            <p>
+                Feel free to connect with me for professional
+                opportunities, collaborations, and learning.
+            </p>
+
+            <a href="mailto:jencychristony@gmail.com" class="btn">
+                Send Me an Email
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            © <span id="year"></span> Jency Christony J.
+            All rights reserved.
+        </p>
+        <p>Designed with passion and a love for technology.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
